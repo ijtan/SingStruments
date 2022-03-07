@@ -1,0 +1,15 @@
+# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > dock_requirements.txt' in the terminal to overwrite this file
+fastapi[all]==0.63.0
+uvicorn[standard]==0.13.4
+gunicorn==20.0.4
+uvicorn 
+wheel 
+fastapi 
+tensorflow>=2.0.0
+tensorflow_hub 
+aiofiles 
+scipy 
+pydub 
+music21 
+jinja2 
+python-multipart

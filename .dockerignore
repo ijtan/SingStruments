@@ -1,0 +1,11 @@
+.git
+og_version/
+our_version/
+similarity/
+TeX Report/
+Dockerfile
+.gitignore
+README.md
+env.*
+Pipfile
+.vscode/

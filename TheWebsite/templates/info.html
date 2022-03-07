@@ -1,0 +1,36 @@
+{% extends "navbar.html" %}
+
+{% block head %}
+{{ super() }}
+<title>About</title>
+{% endblock%}
+
+{% block content %}
+{{ super() }}
+<h1 class="center" style="margin-bottom: 5vh;">Creators</h1>
+
+
+<div class="creators">
+
+    <div class="user">
+        <img class="portrait" src="{{ url_for('static', path='/Images/ethan.jpg') }}" alt="Ethan" width="340" height="400">
+        <p class="center"><strong>Ethan Zammit</strong></p>
+    </div>
+
+    <div class="user">
+        <img class="portrait" src="{{ url_for('static', path='/Images/logan.jpg') }}" alt="Logan" width="340" height="400">
+        <p class="center"><strong>Logan Formosa</strong></p>
+    </div>
+    
+    <div class="user">
+        <img class="portrait" src="{{ url_for('static', path='/Images/sean.jpg') }}" alt="Sean" width="340" height="400">
+        <p class="center"><strong>Sean Farrugia</strong></p>
+    </div>
+    
+</div>
+
+<h1 class="center">About</h1>
+<p class="center">This project was cerated in May 2021 as part of the (ICS2208) Intelligent Interfaces Unit!</p>
+
+
+{% endblock %}

@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+     background-image: url("https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?cs=srgb&dl=pexels-pixabay-235994.jpg&fm=jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+div {
+    display: block;
+    
+}
+
+#content{
+    margin-top: 10vh;
+}
+
+.recording {
+    margin-top: 5vh;
+    height: 20vh;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.btn-our {
+    display: inline-block;
+    /* height: 100px; */
+    /* width: 100px; */
+    margin: 0 10px;
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none !important;
+}
+
+.creators {
+    width: 95%;
+    margin: auto;
+}
+
+.user {
+    display: inline-block;
+    width: 30vw;
+}
+
+img.portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.list-group-item{
+   background-color: rgba(0,0,0,0.15) !important;
+}
+.form-control{
+   background-color: rgba(0,0,0,0.1) !important;
+}
+.audio{
+   background-color: rgba(0,0,0,0.1) !important;
+}
+
+#playButton{
+    left: 140px;
+}
+
+#OSMD_div {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}

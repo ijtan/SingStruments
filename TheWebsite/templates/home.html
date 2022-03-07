@@ -1,0 +1,45 @@
+{% extends "navbar.html" %}
+
+{% block head %}
+{{ super() }}
+<title>SingStruments</title>
+{% endblock%}
+
+{% block content %}
+{{ super() }}
+
+<br>
+
+<div id="controls">
+
+  
+  <div class="recording">
+
+    <button type="button" id="recordButton" class="btn-our" style="background: none; border:none;">
+      <img src="{{ url_for('static', path='/Images/record.png') }}" id="recordButtonImage" alt="Record" width="100"
+        height="100">
+    </button>
+
+    <button type="button" id="playButton" class="btn-our" style="background: none; border:none; " disabled>
+      <img id="playButtonImage" src="{{ url_for('static', path='/Images/play_greyed.png') }}" alt="Stop" width="100"
+        height="100">
+    </button>
+    
+    <div id="my-icon-select"></div>
+  </div>
+
+</div>
+<div id="OSMD_div"></div>
+
+<audio id="audio-player" src=""></audio>
+
+
+<div id="formats" hidden>Format: start recording to see sample rate</div>
+<ol id="recordingsList" class="list-group"></ol>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+<script src="static/js/app.js"></script>
+{% endblock %}
